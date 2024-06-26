@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import { Briefcase, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,24 +11,6 @@ import Breifcase from "../../public/briefcase-02.svg";
 import Message from "../../public/message.svg";
 import CoinsHand from "../../public/coins-hand.svg";
 import Bell from "../../public/bell-02.svg";
-
-const navLinks = [
-  {
-    image: Breifcase,
-    label: "Jobs",
-    href: ["/", "/jobs"]
-  },
-  {
-    image: Message,
-    label: "Messages",
-    href: "/messages"
-  },
-  {
-    image: CoinsHand,
-    label: "Payments",
-    href: "/payments"
-  }
-];
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -49,10 +31,20 @@ const Navbar = () => {
               }`
             )}
           >
-            <Image src={Breifcase} className=" size-6" alt="Link icons" />
+            <Briefcase
+              size={24}
+              className={cn(
+                `${
+                  pathname !== "/" || pathname.startsWith("/jobs")
+                    ? "text-[#B0B0B0]"
+                    : ""
+                }`
+              )}
+            />
             <span>{"Jobs"}</span>
           </div>
         </Link>
+
         <Link href={"/messages"} className="flex space-x-2 items-center">
           <div
             className={cn(
@@ -63,10 +55,14 @@ const Navbar = () => {
               }`
             )}
           >
-            <Image src={Message} className=" size-6" alt="Link icons" />
+            <div className="relative">
+              <Image src={Message} alt="Bell icons" className="size-6" />
+              <div className=" w-1.5 h-1.5 bg-[#DC4A2D] rounded-full absolute top-0  -right-0"></div>
+            </div>
             <span>{"Messages"}</span>
           </div>
         </Link>
+
         <Link href={"/payments"} className="flex space-x-2 items-center">
           <div
             className={cn(
