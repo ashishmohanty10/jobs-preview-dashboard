@@ -73,7 +73,7 @@ const Navbar = () => {
               }`
             )}
           >
-            <Image src={CoinsHand} className=" size-6" alt="Link icons" />
+            <Image src={CoinsHand} className=" size-6" alt="Link Icons" />
             <span>{"Payments"}</span>
           </div>
         </Link>
