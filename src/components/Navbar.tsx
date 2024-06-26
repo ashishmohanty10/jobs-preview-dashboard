@@ -23,6 +23,7 @@ const Navbar = () => {
       >
         <h1 className="font-bold text-xl text-[#DC4A2D]">Logo</h1>
       </Link>
+
       <ul className="hidden xl:flex px-2 py-3 border border-[#D1D1D1] rounded-full gap-x-16 h-[66px] text-base font-medium text-[#3D3D3D]">
         <Link href={"/"} className="flex space-x-2 items-center">
           <div

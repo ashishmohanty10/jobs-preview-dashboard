@@ -2,7 +2,7 @@ import AboutJob from "@/components/AboutJob";
 import Company from "@/components/Company";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
-import Smallnavbar from "@/components/Smallnavbar";
+
 import {
   Eye,
   MessageSquare,
