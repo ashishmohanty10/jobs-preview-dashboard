@@ -4,17 +4,17 @@ import Logo from "../../public/logo2.svg";
 
 const Company = () => {
   return (
-    <div className="py-6 pl-[80px] shadow">
+    <div className="py-6 pl-[40px] md:pl-[80px] shadow">
       <div className="flex flex-col gap-y-4">
-        <div className="flex items-center gap-x-3">
+        <div className="flex items-center gap-x-3 mb-5 ">
           <Image src={Logo} alt="Brand Logo" />
           <p className="text-[#4F4F4F] text-xl font-medium">Atlassian</p>
         </div>
 
-        <div className="flex items-center gap-x-12">
-          {/* right side */}
-          <div className="flex flex-col gap-y-6">
-            <div className="flex flex-col gap-y-2">
+        <div className="md:flex items-center gap-x-12 mb-5 xl:mb-0">
+          {/* left side */}
+          <div className="flex flex-col gap-y-6 mb-4 md:mb-0">
+            <div className="flex flex-col gap-y-2 ">
               <p className="text-[#6E6D6D] font-medium text-sm">Company size</p>
               <p className="text-[#3D3D3D] font-medium text-lg">
                 1k-2k Employees

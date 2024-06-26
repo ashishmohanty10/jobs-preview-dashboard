@@ -9,14 +9,37 @@ import {
   PencilIcon,
   Trash2Icon,
   UserRoundCheck,
-  UsersRound
+  UsersRound,
 } from "lucide-react";
+
+const applicantsData = [
+  {
+    icon: <UsersRound size={20} />,
+    label: "Applicants",
+    number: 400,
+  },
+  {
+    icon: <UserRoundCheck size={20} />,
+    label: "Matches",
+    number: 100,
+  },
+  {
+    icon: <MessageSquare size={20} />,
+    label: "Messages",
+    number: 147,
+  },
+  {
+    icon: <Eye size={20} />,
+    label: "Views",
+    number: 800,
+  },
+];
 
 export default function JobsPage() {
   return (
     <>
-      <div className="grid grid-cols-12">
-        <div className=" col-span-8 ">
+      <div className="xl:grid xl:grid-cols-12">
+        <div className=" col-span-8 mb-10 xl:mb-0">
           <HeroSection />
           <SkillsSection />
           <AboutJob />
@@ -58,26 +81,3 @@ export default function JobsPage() {
     </>
   );
 }
-
-const applicantsData = [
-  {
-    icon: <UsersRound size={20} />,
-    label: "Applicants",
-    number: 400
-  },
-  {
-    icon: <UserRoundCheck size={20} />,
-    label: "Matches",
-    number: 100
-  },
-  {
-    icon: <MessageSquare size={20} />,
-    label: "Message",
-    number: 147
-  },
-  {
-    icon: <Eye size={20} />,
-    label: "Views",
-    number: 800
-  }
-];

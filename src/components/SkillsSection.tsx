@@ -7,8 +7,8 @@ import { jobListing } from "@/data";
 
 const SkillsSection = () => {
   return (
-    <div className="py-6 pl-[80px] shadow">
-      <div className="flex items-start gap-x-16">
+    <div className="py-6 pl-[40px] md:pl-[80px] shadow">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-16 gap-4">
         <div className="flex flex-col gap-y-2">
           <p className="text-[#6E6D6D] font-medium text-sm">Skills Required</p>
 

@@ -7,7 +7,7 @@ import { cn } from "@/utils/cn";
 const Smallnavbar = () => {
   const pathname = usePathname();
   return (
-    <div className="h-[67px] w-full pl-[80px] py-2 flex items-center justify-start shadow-md  gap-x-[72px] text-lg">
+    <div className="h-[67px] w-full  pl-[40px] md:pl-[80px] py-2 flex items-center justify-start shadow-md gap-x-5 xl:gap-x-[72px] text-sm md:text-sm xl:text-lg">
       <Link
         href="/"
         className={cn(

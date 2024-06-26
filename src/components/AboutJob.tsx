@@ -29,7 +29,7 @@ const jobDetails = [
 
 export default function AboutJob() {
   return (
-    <div className="py-6 pl-[80px] shadow">
+    <div className="py-6 pl-[40px] md:pl-[80px] shadow">
       <div className="flex flex-col gap-y-2">
         <p className="font-medium text-sm text-[#6E6D6D]">About the job</p>
 

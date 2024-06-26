@@ -17,10 +17,13 @@ const Navbar = () => {
 
   return (
     <div className=" flex justify-between items-center shadow-md px-12 py-4 h-[80px] sticky top-0 bg-white z-20">
-      <div className="bg-[#E7E7E7]  w-[100px] h-[60px] flex justify-center items-center">
+      <Link
+        href={"/"}
+        className="bg-[#E7E7E7]  w-[100px] h-[60px] flex justify-center items-center"
+      >
         <h1 className="font-bold text-xl text-[#DC4A2D]">Logo</h1>
-      </div>
-      <ul className="flex px-2 py-3 border border-[#D1D1D1] rounded-full gap-x-16 h-[66px] text-base font-medium text-[#3D3D3D]">
+      </Link>
+      <ul className="hidden xl:flex px-2 py-3 border border-[#D1D1D1] rounded-full gap-x-16 h-[66px] text-base font-medium text-[#3D3D3D]">
         <Link href={"/"} className="flex space-x-2 items-center">
           <div
             className={cn(
@@ -57,7 +60,13 @@ const Navbar = () => {
           >
             <div className="relative">
               <Image src={Message} alt="Bell icons" className="size-6" />
-              <div className=" w-1.5 h-1.5 bg-[#DC4A2D] rounded-full absolute top-0  -right-0"></div>
+              <div
+                className={cn(
+                  ` w-1.5 h-1.5 bg-[#DC4A2D] rounded-full absolute top-0  -right-0 ${
+                    pathname === "/messages" ? "bg-white" : ""
+                  }`
+                )}
+              ></div>
             </div>
             <span>{"Messages"}</span>
           </div>
