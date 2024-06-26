@@ -1,5 +1,32 @@
 import React from "react";
 
+const jobDetails = [
+  {
+    tasks: [
+      "1. Handle the UI/UX research design",
+      "2. Work on researching on latest web applications designs & trends",
+      "3. Work on conceptualizing and visualizing",
+      "4. Work on creating graphics content and other graphic related works",
+    ],
+  },
+  {
+    category: "Benefits",
+    details: ["Health insurance", "Provident Fund"],
+  },
+  {
+    category: "Schedule",
+    details: ["Day shift"],
+  },
+  {
+    category: "Supplemental pay types",
+    details: ["Performance bonus", "Yearly bonus"],
+  },
+  {
+    category: "Work Location",
+    details: ["In person"],
+  },
+];
+
 export default function AboutJob() {
   return (
     <div className="py-6 pl-[80px] shadow">
@@ -27,30 +54,3 @@ export default function AboutJob() {
     </div>
   );
 }
-
-const jobDetails = [
-  {
-    tasks: [
-      "1. Handle the UI/UX research design",
-      "2. Work on researching on latest web applications designs & trends",
-      "3. Work on conceptualizing and visualizing",
-      "4. Work on creating graphics content and other graphic related works",
-    ],
-  },
-  {
-    category: "Benefits",
-    details: ["Health insurance", "Provident Fund"],
-  },
-  {
-    category: "Schedule",
-    details: ["Day shift"],
-  },
-  {
-    category: "Supplemental pay types",
-    details: ["Performance bonus", "Yearly bonus"],
-  },
-  {
-    category: "Work Location",
-    details: ["In person"],
-  },
-];
